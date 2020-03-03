@@ -11,10 +11,11 @@
 
     <header class="header">
       <div class="nav-main-content">
-        <div class="">
-          <div>
-            <a href="https://www.linkedin.com/feed/"><i class="home-icon fab fa-linkedin"></i></a>
-          </div>
+        <div class="position-relative">
+          <div class="position-absolute"></div>
+
+            <a href="https://www.linkedin.com/feed/" style="position: relative;z-index: 999;"><i class="home-icon fab fa-linkedin"></i></a>
+
         </div>
         <form id="nav-search" action="">
           <input class="search-field" type="text" placeholder="Search">
@@ -22,52 +23,61 @@
         <nav class="nav-main">
           <ul class="nav-list">
 
-            <li class="main-nav-item">
-              <a class="" href="">
-                <span class="fas fa-home"></span>
+            <li class="border-bottom main-nav-item">
+              <a class="active" href="">
+                <span class="relative">
+                  <span class="fas fa-home"></span>
+                  <span class="absolute fas fa-circle"></span>
+                </span>
                 <span class="nav-item-word">Home</span>
               </a>
             </li>
 
-            <li class="main-nav-item">
+            <li class="">
               <a href="">
                 <span class="fab fa-connectdevelop"></span>
                 <span class="nav-item-word"> Network</span>
               </a>
             </li>
 
-            <li class="main-nav-item">
+            <li class="">
               <a href="">
                 <span class="fas fa-briefcase"></span>
                 <span class="nav-item-word">Jobs</span>
               </a>
             </li>
 
-            <li class="main-nav-item">
+            <li class="">
               <a href="">
                 <span class="far fa-comment-alt"></span>
                 <span class="nav-item-word">Messaging</span>
               </a>
             </li>
 
-            <li class="main-nav-item">
+            <li class="">
               <a href="">
                 <span class="far fa-bell"></span>
                 <span class="nav-item-word">Notifications</span>
               </a>
             </li>
 
-            <li class="main-nav-item">
+            <li class="">
               <a href="">
                 <span class="far fa-user"></span>
-                <span class="nav-item-word">Me^</span>
+                <span>
+                  <span class="nav-item-word">Me</span>
+                  <span class="fas fa-sort-down"></span>
+                </span>
               </a>
             </li>
 
-            <li class="">
-              <a href="">
+            <li class="border-left">
+              <a href="" class="">
                 <span class="fas fa-th"></span>
-                <span class="nav-item-word">Work</span>
+                <span>
+                  <span class=" nav-item-word">Work</span>
+                  <span class="fas fa-sort-down"></span>
+                </span>
               </a>
             </li>
 
@@ -81,9 +91,11 @@
         </nav>
       </div>
     </header>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div class="main-container">
+      <div class="left-container"></div>
+      <div class="middle-container"></div>
+      <div class="right-container"></div>
+    </div>
 
   </div>
   <script src="javascript/"></script>
